@@ -1,7 +1,8 @@
 {
     "name": "sivakumar reddy",
     "dob": "01-01-01",
-    "addresses": [
+    // # so idi oka list anukunte dhani kidha vachevi anni whithin [square brackets] lo vundali 
+    "addresses": [ 
         {
             "type": "current",
             "doono": "1-23",
@@ -19,3 +20,4 @@
     ],
     "skills": ["java", "devops", "cloud"]
 }
+// # so idi oka list anukunte dhani kidha vachevi anni whithin [square brackets] lo vundali 

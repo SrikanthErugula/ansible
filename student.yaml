@@ -1,7 +1,7 @@
 - name: "sivakumar reddy m"
   dob: "01-01-01"
   age: 21
-  addresses:
+  addresses: # so idi oka list anukunte dhani kidha vachevi anni same place lo one by one vundali
     # Object
   - doorNo: 4-32
     street: "gandhi nagar"
@@ -14,7 +14,7 @@
     city: hyderabd
     pin: 534565
     type: perm
-  skills:
+  skills: # so idi oka list anukunte dhani kidha vachevi anni same place lo one by one vundali
   - java
   - devops
   - cloud
