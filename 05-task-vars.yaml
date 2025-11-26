@@ -7,7 +7,7 @@
     Trainer: Srikanth Reddy
   tasks: 
   - name: print the course info
-    # vars:
-    #   COURSE: ANSIBLE ANSI
+    vars:
+      COURSE: ANSIBLE ANSI
     ansible.builtin.debug: # this is used to print the info whatever has in tasks
       msg: "Course name is: {{ COURSE }}, Duration is {{ DURATION }}, Trainer name is {{ Trainer }}"
