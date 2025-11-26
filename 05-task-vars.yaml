@@ -11,3 +11,5 @@
       COURSE: ANSIBLE ANSI
     ansible.builtin.debug: # this is used to print the info whatever has in tasks
       msg: "Course name is: {{ COURSE }}, Duration is {{ DURATION }}, Trainer name is {{ Trainer }}"
+
+# here we did over written COURSE anedhi so called as Inheritance...........
