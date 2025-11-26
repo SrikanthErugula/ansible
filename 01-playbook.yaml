@@ -1,4 +1,4 @@
-- name: "ping the server"
+- name: "ping the server" # ikkada next buttion click 
   hosts: frontend # so ikkada .ini folder loki velli frontend ane grp vunte dhani kindha vunna all ips of server ni excute chestundhi...... Which server you are connecting to
   # List of tasks/collections/modules
   tasks: # so here antha same place lo one by one vundali
