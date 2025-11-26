@@ -1,0 +1,13 @@
+- name: paly level varibales
+  hosts: local # so here local host ani ichhinapudu adhi velli .ini lo search chestundhi 
+  connection: local # so here anisble is manageing without another server there is no dependency.. so for that we need set up .ini lo local ni ivvali oka grp.. ansuible ekkada ithe install ayyi vundho akkada connect avuthundhi ther is no dependent on frontend and any...
+  vars: 
+    COURSE: DEVSECOPS
+    DURATION: 10 HRS
+    Trainer: Srikanth Reddy
+  tasks: 
+  - name: print the course info
+    # vars:
+    #   COURSE: ANSIBLE ANSI
+    ansible.builtin.debug: # this is used to print the info whatever has in tasks
+      msg: "Course name is: {{ COURSE }}, Duration is {{ DURATION }}, Trainer name is {{ Trainer }}"
