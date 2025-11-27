@@ -5,3 +5,5 @@
   - name: ping
     ansible.builtin.ping: #The ansible.builtin.ping module is a core Ansible module used to test the connectivity and basic functionality between the Ansible control node and the managed hosts. It is a fundamental tool for verifying that Ansible can successfully communicate with and execute commands on remote systems. 
 ###################################################
+
+# so here before : we callled ad keys.... and after : we called as values... so manam key anevi change cheyalemu but we have a chance to change values
