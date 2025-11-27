@@ -1,7 +1,7 @@
 - name: variables from files
   hosts: local
   connection: local
-  vars_failes:
+  vars_failes: # so here anni files aayina reffer or call cheyachu 
   - course.yaml
   tasks:
   - name: print the course info
