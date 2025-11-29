@@ -1,7 +1,7 @@
 - name: check the facts
   hosts: local
   connection: local
-  become: yes
+  become: yes # this is used to check it is sudo access or not 
   tasks:
   - name: install nginx if redhat
     ansible.builtin.dnf:
