@@ -61,7 +61,7 @@
 
   - name: grep for root
     ansible.builtin.shell: cat /etc/passwd | grep root # here command ani name tho excute avvaledhu so we need shell 
-    ansible.builtin.command: #cat /etc/passwd | grep root # here command ani name tho excute avvaledhu so we need shell 
+    #ansible.builtin.command: #cat /etc/passwd | grep root # here command ani name tho excute avvaledhu so we need shell 
     register: command_output # here cat /etc/passwd | grep root -- idi excute ayyi command_output loki vachhi store avuthundhi
   
   - name: print the command_output
