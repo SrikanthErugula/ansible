@@ -5,6 +5,7 @@
     fruits: apple,banana,orange,mango,pineapple,guava,custardapple # these are all strings
     sriname: " Erugula Srikanth reddy"
     gmail: Info@Gmail.com
+    ipaddress: "19222.168.0.1"
     # dictionary or map both are same
     tags:
       Application: payment
@@ -53,3 +54,7 @@
   - name: convert into lowercase
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
+
+  - name: check IP is valid or not
+    ansible.builtin.debug: 
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
