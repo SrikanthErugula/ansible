@@ -4,6 +4,7 @@
   vars:
     fruits: apple,banana,orange,mango,pineapple,guava,custardapple # these are all strings
     sriname: " Erugula Srikanth reddy"
+    gmail: Info@Gmail.com
     # dictionary or map both are same
     tags:
       Application: payment
@@ -48,3 +49,7 @@
   - name: convert uppercase
     ansible.builtin.debug:
       msg: "{{ sriname | upper }}"
+
+  - name: convert into lowercase
+    ansible.builtin.debug:
+      msg: "{{ gmail | lower }}"
