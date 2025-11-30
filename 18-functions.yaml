@@ -71,7 +71,7 @@
   - name: redirect the output
     ansible.builtin.command: ls -ltr > /tmp/output.txt # so here redirections and complex cmd vunte command mode lo excute avvadu... se we need to use shell mode
     register: redirect_output # ee varibale loki .... ls -ltr > /tmp/output.txt excute ayyi result vastundhi
-    #ignore_errors: true
+    ignore_errors: true # so ikkad ila pettatum valla manaki telus errro vatundhi ani ayina kuda procced avu cheptunam using igonore cmd tho
 
   - name: print redirect_output
     ansible.builtin.debug:
