@@ -10,5 +10,5 @@
       msg: " Hello, {{ name | default('Srikanth') }}" #  so here under name not avilable at any value we need to use this cmd 
 
   - name: convert string to list 
-    ansible.builtin.split:
+    ansible.builtin.debug:
       msg: " Fruits are : {{ fruits | split(,) }}"
