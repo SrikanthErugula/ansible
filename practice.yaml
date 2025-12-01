@@ -1,0 +1,8 @@
+- name: Print the vars_files
+  hosts: cart 
+  vars: 
+    SRI: kanth
+  tasks: 
+  - name: defined the vars
+    ansible.builtin.debug:
+      msg: "var sri is {{ SRI }}"
