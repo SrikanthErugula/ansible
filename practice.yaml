@@ -18,14 +18,13 @@
 #     - written
 #     - dfg 
 
-- name: Print the loop 
+- name: install pacakges
   hosts: local 
   connection: local 
   tasks: 
-  - name: start loop conditions
+  - name: install by using the loop process
     ansible.builtin.debug:
-      msg: " Hi {{ item }}"
+      name: "{{ item }}"
+      state: install
     loop:
-    - woieo 
-    - jdhjaja
-  
+    - nginx
