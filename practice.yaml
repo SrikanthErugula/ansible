@@ -24,7 +24,7 @@
   become: yes
   tasks: 
   - name: install by using the loop process
-    ansible.builtin.debug:
+    ansible.builtin.package:
       name: "{{ item }}"
       state: install
     loop:
