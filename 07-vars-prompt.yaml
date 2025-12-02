@@ -4,7 +4,7 @@
   vars_prompt:
   - name: username
     prompt: What is your username?
-    private: false
+    private: true
   #- name: password # so here will get error when password haven't define ------ fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'password' is undefined. 'password' is undefine
     #prompt: what is your password
     #private: false # so here false ani vunte enter chesetappudu visible avuthundhi, adhe true ani vunte wont visible
