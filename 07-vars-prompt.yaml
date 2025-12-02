@@ -7,7 +7,7 @@
     private: false # false ani vunte enter chestunte name visible avuthundhi..... True vunte after excute it will be visible......
   - name: password # so here will get error when password haven't define ------ fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'password' is undefined. 'password' is undefine
     prompt: what is your password
-    private: false # so here false ani vunte enter chesetappudu visible avuthundhi, adhe true ani vunte wont visible
+    private: true # so here false ani vunte enter chesetappudu visible avuthundhi, adhe true ani vunte wont visible
   tasks: 
     - name: print credentials
       ansible.builtin.debug:
