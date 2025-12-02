@@ -39,17 +39,17 @@
     # gmail: Info@Gmail.com
     # ipaddress: "19222.168.0.1"
     # dictionary or map both are same
-    # tags:
-    #   Application: payment
-    #   Environment: dev
-      # list 
-    # listtags:
-    #   - key: Application
-    #     value: payment
-    #   - key: Environment
-    #     value: dev
+    tags:
+      Application: payment
+      Environment: dev
+     # list:
+    listtags:
+      - key: Application
+        value: payment
+      - key: Environment
+        value: dev
   tasks: 
   - name: default variable
     ansible.builtin.debug:
       # msg: " Hello, {{ name }}" # error is : "The task includes an option with an undefined variable.
-      msg: " Hello, {{ name | default('Srikanth') }}" #  so here under name not avilable at any value we need to use this cmd 
+      msg: " tags are {{ tags }}, listtags {{ listtags}}" #  so here under name not avilable at any value we need to use this cmd 
