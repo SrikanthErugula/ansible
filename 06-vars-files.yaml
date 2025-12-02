@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: localhost
+  hosts: local # so here localhost ayina ivvachu
   connection: local
   vars_files: # so here anni files aayina reffer or call cheyachu 
   - course.yaml
