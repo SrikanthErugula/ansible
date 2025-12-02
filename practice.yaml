@@ -26,6 +26,6 @@
   - name: install by using the loop process
     ansible.builtin.package:
       name: "{{ item }}"
-      state: absent
+      state: install
     loop:
     - nginx
