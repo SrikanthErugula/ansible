@@ -18,13 +18,14 @@
 #     - written
 #     - dfg 
 
-- name: Print the loops
+- name: Print the loop 
   hosts: local 
-  connection: local
-  tasks:
-  - name: print
+  connection: local 
+  tasks: 
+  - name: start loop conditions
     ansible.builtin.debug:
       msg: " Hi {{ item }}"
     loop:
-    - srtopo 
-    - srtyui
+    - woieo 
+    - jdhjaja
+  
