@@ -22,9 +22,9 @@
   hosts: local 
   connection: local
   tasks:
-   ansible.builtin.debug:
-    msg: " Hi {{ item }}"
-  loop:
-  - srtopo 
-  - srtyui
-  
+  - name: print
+    ansible.builtin.debug:
+      msg: " Hi {{ item }}"
+    loop:
+    - srtopo 
+    - srtyui
