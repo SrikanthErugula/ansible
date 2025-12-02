@@ -12,7 +12,7 @@
   connection: local 
   tasks:
   - name: print the names
-    asnible.builtin.debug:
+    ansible.builtin.debug:
       msg: " Hi {{ item }}"
     loop:
     - written
