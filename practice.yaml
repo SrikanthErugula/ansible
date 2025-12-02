@@ -21,6 +21,7 @@
 - name: install pacakges
   hosts: local 
   connection: local 
+  become: yes
   tasks: 
   - name: install by using the loop process
     ansible.builtin.debug:
