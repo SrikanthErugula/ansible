@@ -6,7 +6,7 @@
   - name: print names
     ansible.builtin.package:
       name: "{{ item }}"
-      state: latest # or install 
+      state: latest # latest ante install avuthundi......... absent ante remove avuthundi....
     loop:
     - nginx
     #- mysql
