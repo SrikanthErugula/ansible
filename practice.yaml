@@ -7,13 +7,24 @@
 #     ansible.builtin.debug:
 #       msg: "var sri is {{ SRI }}"
 
-- name: loops
+# - name: loops
+#   hosts: local 
+#   connection: local 
+#   tasks:
+#   - name: print the names
+#     ansible.builtin.debug:
+#       msg: " Hi {{ item }}"
+#     loop:
+#     - written
+#     - dfg 
+
+- name: Print the loops
   hosts: local 
-  connection: local 
+  connection: local
   tasks:
-  - name: print the names
-    ansible.builtin.debug:
-      msg: " Hi {{ item }}"
-    loop:
-    - written
-    - dfg 
+   ansible.builtin.debug:
+    msg: " Hi {{ item }}"
+  loop:
+  - srtopo 
+  - srtyui
+  
