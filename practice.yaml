@@ -51,5 +51,5 @@
   tasks: 
   - name: default variable
     ansible.builtin.debug:
-      # msg: " Hello, {{ name }}" # error is : "The task includes an option with an undefined variable.
-      msg: " Hello, {{ name | default('Srikanth') }}" #  so here under name not avilable at any value we need to use this cmd 
+       msg: " Hello, {{ name }}" # error is : "The task includes an option with an undefined variable.
+      #msg: " Hello, {{ name | default('Srikanth') }}" #  so here under name not avilable at any value we need to use this cmd 
