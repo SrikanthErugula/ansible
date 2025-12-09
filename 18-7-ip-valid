@@ -9,3 +9,5 @@
       msg: "{{ ipaddress | ansible.utils.ipv4 }}"
 # so ikkada ila run chetse something error vastundi like u need to install some library files then only it will be excute 
  # pip3.9 install netaddr ...... so we need to install this and run above cmd
+# invalid ithe msg lo false ani vastundi
+# vaid ithe ip adress print avuthundhi 
