@@ -2,8 +2,10 @@
   hosts: local
   connection: local
   vars:
-    ipaddress: 238.2394.23948.384
+    ipaddress: 192.150.2.3
   tasks:
   - name: check IP is valid or not
     ansible.builtin.debug: 
       msg: "{{ ipaddress | ansible.utils.ipv4 }}"
+# so ikkada ila run chetse something error vastundi like u need to install some library files then only it will be excute 
+ # pip3.9 install netaddr ...... so we need to install this and run above cmd
