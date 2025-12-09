@@ -27,8 +27,9 @@
 # EX 3:
 
   - name: redirect the output using shell 
-    ansible.builtin.shell: ls -ltr #> /tmp/output.txt
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
     register: redirect_output
+    ignore_errors: true
 
   - name: print redirect_output shell
     ansible.builtin.debug:
