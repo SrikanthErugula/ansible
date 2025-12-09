@@ -1,0 +1,12 @@
+- name: functions
+  hosts: local
+  connection: local
+  listtags:
+      - key: Application
+        value: payment
+      - key: Environment
+        value: dev
+  tasks:
+  - name: convert list into map
+    ansible.builtin.debug:
+      msg: " List tags are : {{ listtags | items2dict }} "
