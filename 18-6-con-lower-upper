@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    #sriname: " Srikanth reddy"
+    sriname: " Srikanth reddy"
     gmail: " Srikanth@Gmail"
   tasks:
   - name: convert uppercase # sriname anedhi full ga upper loki change avuthundhi
