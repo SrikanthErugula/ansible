@@ -14,4 +14,4 @@
 
   - name: create user
     ansible.builtin.command: useradd roboshop
-    when: user_output.rc != 0 # 
+    when: user_output.rc != 0 # so ikkada not equal to zero ithe user anedi create avvali..... second time run cheste skkiping ani avastundhi
