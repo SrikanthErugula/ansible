@@ -7,3 +7,5 @@
   - name: convert string to list 
     ansible.builtin.debug:
       msg: " Fruits are : {{ fruits | split(',') }}"
+  
+# list[]  ['apple', 'banana', 'orange', 'mango', 'pineapple', 'guava', 'custardapple']"
