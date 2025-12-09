@@ -3,6 +3,7 @@
   connection: local
   vars:
     sriname: " Srikanth reddy"
+    gmail: " Srikanth@Gmail"
   tasks:
   - name: convert uppercase # name anedhi full ga upper loki change avuthundhi
     ansible.builtin.debug:
