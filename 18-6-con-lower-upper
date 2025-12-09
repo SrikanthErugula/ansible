@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-    sriname: " Srikanth reddy"
+    #sriname: " Srikanth reddy"
     gmail: " Srikanth@Gmail"
   tasks:
-  - name: convert uppercase # name anedhi full ga upper loki change avuthundhi
+  - name: convert uppercase # sriname anedhi full ga upper loki change avuthundhi
     ansible.builtin.debug:
-      msg: "{{ sriname | upper }}"
+      msg: "{{ sriname | default('Srikanth redueiuiue') upper }}"
 
-  - name: convert into lowercase # name anedi full ga lower loki change avuthundi
+  - name: convert into lowercase # gmail anedi full ga lower loki change avuthundi
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
