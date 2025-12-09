@@ -8,6 +8,9 @@
       Application: payment
       Environment: dev
   tasks:
-  - name: convert map to list
+  - name: convert map to list # so ikkada map anevi list loki convert ayyai done,
     ansible.builtin.debug:
       msg: " Tags are: {{ tags | dict2items }}"
+  
+
+#  "msg": " Tags are: [{'key': 'Application', 'value': 'payment'}, {'key': 'Environment', 'value': 'dev'}]"
