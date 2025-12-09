@@ -1,0 +1,7 @@
+- name: functions
+  hosts: local
+  connection: local
+  tasks:
+  - name: read yaml and take it into variable
+    ansible.builtin.set_fact: # this the module for excute 
+      student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}" # so here student.yaml file lo vuna content antha key varivale loki velli store avuthundi

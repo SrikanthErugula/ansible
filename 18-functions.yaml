@@ -18,30 +18,35 @@
         value: dev
   tasks: 
   - name: default variable
-    ansible.builtin.debug:
+    ansible.builtin.debug: # this the module for excute
       # msg: " Hello, {{ name }}" # error is : "The task includes an option with an undefined variable.
       msg: " Hello, {{ name | default('Srikanth') }}" #  so here under name not avilable at any value we need to use this cmd 
 
 # convert string to list 
 
   - name: convert string to list 
-    ansible.builtin.debug:
+    ansible.builtin.debug: # this the module for excute
       msg: " Fruits are : {{ fruits | split(',') }}"
 
+# convert map to list
   - name: convert map to list
-    ansible.builtin.debug:
+    ansible.builtin.debug: # this the module for excute
       msg: " Tags are: {{ tags | dict2items }}"
   
+# convert list into map
+
   - name: convert list into map
-    ansible.builtin.debug:
+    ansible.builtin.debug: # this the module for excute
       msg: " List tags are : {{ listtags | items2dict }} "
-  
+
+# read yaml and take it into variable
+
   - name: read yaml and take it into variable
-    ansible.builtin.set_fact:
+    ansible.builtin.set_fact: # this the module for excute
       student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}" # so here student.yaml file lo vuna content antha key varivale loki velli store avuthundi
 
   - name: convert yaml into json
-    ansible.builtin.debug:
+    ansible.builtin.debug: # this the module for excute
       msg: "json: {{ student_yaml | to_json  }}"
   
   - name: save json to file

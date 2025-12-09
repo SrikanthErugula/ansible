@@ -15,7 +15,7 @@
       cm: ansible
   tasks:
   - name: print course info
-    ansible.builtin.debug:
+    ansible.builtin.debug: # this the module for excute
       msg: "Course name: {{ Course }}, Duration: {{ Duration }}, is it live?: {{ is_live }}, tools are: {{ tools }} concepts are: {{ concepts }}"
 
 # list: []

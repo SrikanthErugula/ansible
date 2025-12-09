@@ -4,13 +4,13 @@
   become: yes # this is used to check it is sudo access or not 
   tasks:
   - name: install nginx if redhat
-    ansible.builtin.dnf:
+    ansible.builtin.dnf: # this the module for excute
       name: nginx
       state: latest
     when: ansible_os_family == "RedHat" # use (ansible_) while referring the facts
 
   - name: install nginx if redhat
-    ansible.builtin.apt:
+    ansible.builtin.apt: # this the module for excute
       name: nginx
       state: latest
     when: ansible_os_family == "Debian"

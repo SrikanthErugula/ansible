@@ -4,7 +4,7 @@
   become: yes # for sudo access
   tasks:
   - name: print names
-    ansible.builtin.package:
+    ansible.builtin.package: # this the module for excute
       name: "{{ item }}"
       state: latest # latest ante install avuthundi......... absent ante remove avuthundi....
     loop:

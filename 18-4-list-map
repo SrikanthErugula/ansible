@@ -9,7 +9,7 @@
         value: dev
   tasks:
   - name: convert list into map # so here convert to list to map loki 
-    ansible.builtin.debug:
+    ansible.builtin.debug: # this the module for excute
       msg: " List tags are : {{ listtags | items2dict }} "
   
 
