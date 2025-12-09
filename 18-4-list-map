@@ -1,7 +1,8 @@
 - name: functions
   hosts: local
   connection: local
-  listtags:
+  vars: 
+   listtags:
       - key: Application
         value: payment
       - key: Environment
