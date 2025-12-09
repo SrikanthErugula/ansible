@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    name: " Srikanth reddy"
+    sriname: " Srikanth reddy"
   tasks:
   - name: convert uppercase
     ansible.builtin.debug:
