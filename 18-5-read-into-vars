@@ -6,7 +6,13 @@
     ansible.builtin.set_fact: 
     # this the module for excute 
       student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}" # so here student.yaml file lo vuna content antha key varivale loki velli store avuthundi
-
+# convert yaml into json
   - name: convert yaml into json
     ansible.builtin.debug: # this the module for excute
       msg: "json is : {{ student_yaml | to_json  }}"
+
+      # save json to file
+  - name: save json to file
+    ansible.builtin.copy:
+      dest: ./student-data1.json
+      content: "{{ student_yaml | to_nice_json  }}"
