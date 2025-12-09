@@ -7,7 +7,7 @@
   tasks:
   - name: convert uppercase # sriname anedhi full ga upper loki change avuthundhi
     ansible.builtin.debug:
-      msg: "{{ sriname | default('Srikanth redueiuiue') upper }}"
+      msg: "{{ sriname | default('Srikanth redueiuiue') ('upper') }}"
 
   - name: convert into lowercase # gmail anedi full ga lower loki change avuthundi
     ansible.builtin.debug:
