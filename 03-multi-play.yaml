@@ -25,18 +25,3 @@
 
 
 ######### Practice section ##########
-
-- name: play-01
-  hosts: local
-  tasks:
-  - name: play-01 and task-01
-    ansible.builtin.debug: 
-      msg: " print this taks-01"
-
-- name: play-02
-  hosts: local
-  tasks: 
-  - name:
-    ansible.builtin.debug:
-      msg: " Hello Words"
-

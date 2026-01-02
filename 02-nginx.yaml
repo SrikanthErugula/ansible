@@ -11,4 +11,10 @@
     ansible.builtin.service:
       name: nginx
       state: started
-      enabled: yes
+      enabled: yes # sudo access.
+
+## SYNTAX for Package
+#ansible install package module https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/package_module.html
+
+## SYNTAX  for service: 
+# ansible start service module https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/service_module.html

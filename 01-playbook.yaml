@@ -1,10 +1,15 @@
 - name: "ping the server" # ikkada next buttion click 
-  hosts: frontend # so ikkada .ini folder loki velli frontend ane grp vunte dhani kindha vunna all ips of server ni excute chestundhi...... Which server you are connecting to
+  hosts: frontend 
+  # {so ikkada .ini folder loki velli frontend ane grp vunte dhani kindha vunna all ips of server ni 
+  #excute chestundhi...... Which server you are connecting to anedhi hostes cheptundhi.}
   
   # List of tasks/collections/modules
   tasks: # so here antha same place lo one by one vundali
   - name: ping
-    ansible.builtin.ping: #The ansible.builtin.ping module is a core Ansible module used to test the connectivity and basic functionality between the Ansible control node and the managed hosts. It is a fundamental tool for verifying that Ansible can successfully communicate with and execute commands on remote systems. 
+    ansible.builtin.ping: 
+    #{The ansible.builtin.ping module is a core Ansible module used to test the connectivity and 
+    #basic functionality between the Ansible control node and the managed hosts. It is a fundamental tool for verifying that #Ansible can successfully communicate with and execute commands on remote systems. }
 ###################################################
 
-# so here before : we callled ad keys.... and after : we called as values... so manam key anevi change cheyalemu but we have a chance to change values
+# {so here before : we callled keys.... and after : we called as values... so manam key anevi change 
+#cheyalemu but we have a chance to change values }
