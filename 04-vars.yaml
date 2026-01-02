@@ -1,6 +1,6 @@
 - name: paly level varibales
-  hosts: local # so here local host ani ichhinapudu adhi velli .ini lo search chestundhi ..........# so here localhost ayina ivvachu
-  connection: local # so here anisble is manageing without another server there is no dependency.. so for that we need set up .ini lo local ni ivvali oka grp.. ansuible ekkada ithe install ayyi vundho akkada connect avuthundhi ther is no dependent on frontend and any...
+  hosts: local # so here local host ani ichhinapudu adhi velli .ini lo search chestundhi ..........
+  connection: local # see in notes
   vars: 
     COURSE: Ansible
     DURATION: 10 HRS
@@ -9,3 +9,6 @@
   - name: print the course info
     ansible.builtin.debug: # this is used to print the info whatever has in tasks # this the module for excute
       msg: "Course name is: {{ COURSE }}, Duration is {{ DURATION }}, Trainer name is {{ Trainer }}"
+
+## SYNTAX 
+# variales in ansible https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_variables.html
