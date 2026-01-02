@@ -1,6 +1,6 @@
 - name: paly level varibales
   hosts: local # so here localhost ani ichhinapudu adhi velli .ini lo search chestundhi .....# so here localhost ayina ivvachu
-  connection: local # so here anisble is manageing without another server there is no dependency.. so for that we need set up .ini lo local ni ivvali oka grp.. ansuible ekkada ithe install ayyi vundho akkada connect avuthundhi ther is no dependent on frontend and any...
+  connection: local 
   vars: 
     COURSE: DEVSECOPS
     DURATION: 10 HRS
