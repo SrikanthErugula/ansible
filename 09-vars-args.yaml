@@ -6,4 +6,5 @@
     ansible.builtin.debug: # this the module for excute
       msg: "Course Name is: {{ COURSE }}, Duratioin: {{ DURATION }}, Trainer: {{ Trainer }}" # so here tainer anedhi samll case lo vundi kabbatti we need to give like that only 
 
-# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 -e "COURSE=Ansible" -e "DURATION=10HRS" -e "Trainer=Sivakumar" 09-vars-args.yaml
+# through CLI in mobaxterm ---{ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 
+#-e "COURSE=Ansible" -e "DURATION=10HRS" -e "Trainer=Sivakumar" 09-vars-args.yaml }
