@@ -3,14 +3,18 @@
   connection: local
   become: yes # this is used to check it is sudo access or not 
   tasks:
+  # for RHEL ithe below dhani family type is dnf
   - name: install nginx if redhat
     ansible.builtin.dnf: # this the module for excute
       name: nginx
       state: latest
     when: ansible_os_family == "RedHat" # use (ansible_) while referring the facts
 
+# for ubunt ithe below dhani family type is debian
   - name: install nginx if redhat
     ansible.builtin.apt: # this the module for excute
       name: nginx
       state: latest
     when: ansible_os_family == "Debian"
+
+    # so here backend lo facts ni check chesukoni manaki kavalsina family ki match chesi nginx install chestundhi..
