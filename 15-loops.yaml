@@ -10,3 +10,6 @@
     - Suresh
     - Raheem
     - John
+
+#FOR syntax ---loops in ansible
+#https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_loops.html

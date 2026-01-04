@@ -2,8 +2,7 @@
   hosts: local
   connection: local
   vars:
-    #fruits: apple,banana,orange,mango,pineapple,guava,custardapple # these are all strings
-# dictionary or map both are same
+# dictionary or map both are same # Transforming dictionaries into lists
     tags:
       Application: payment
       Environment: dev
@@ -13,4 +12,8 @@
       msg: " Tags are: {{ tags | dict2items }}"
   
 
-#  "msg": " Tags are: [{'key': 'Application', 'value': 'payment'}, {'key': 'Environment', 'value': 'dev'}]"
+#  "msg": " Tags are: [{'key': 'Application', 'value': 'payment'}, {'key': 'Environment', 'value': 'dev'}]" ---> this is list
+
+
+# FOR SYNATX 
+#  https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_filters.html

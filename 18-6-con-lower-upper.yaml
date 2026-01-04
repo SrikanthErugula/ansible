@@ -12,3 +12,6 @@
   - name: convert into lowercase # gmail anedi full ga lower loki change avuthundi
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
+
+      # FOR SYNATX 
+#  https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_filters.html

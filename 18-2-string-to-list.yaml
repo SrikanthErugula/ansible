@@ -1,11 +1,15 @@
 - name: functions
   hosts: local
   connection: local
-  vars:
+  vars: # Transforming strings into lists 
     fruits: apple,banana,orange,mango,pineapple,guava,custardapple # these are all strings
   tasks:
   - name: convert string to list 
     ansible.builtin.debug:
       msg: " Fruits are : {{ fruits | split(',') }}"
   
-# list[]  ['apple', 'banana', 'orange', 'mango', 'pineapple', 'guava', 'custardapple']"
+# O/P  list[]  ['apple', 'banana', 'orange', 'mango', 'pineapple', 'guava', 'custardapple']"
+
+# FOR SYNATX 
+#  https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_filters.html
+

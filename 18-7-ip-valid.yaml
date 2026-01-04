@@ -1,7 +1,7 @@
 - name: functions
   hosts: local
   connection: local
-  vars:
+  vars: # IP address filters
     ipaddress: "192.150.0.1"
   tasks:
   - name: check IP is valid or not
@@ -11,3 +11,7 @@
  # pip3.9 install netaddr ...... so we need to install this and run above cmd
 # invalid ithe msg lo false ani vastundi
 # vaid ithe ip adress print avuthundhi 
+
+
+# FOR SYNATX 
+#  https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_filters.html

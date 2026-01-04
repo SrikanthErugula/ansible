@@ -1,7 +1,7 @@
 - name: functions
   hosts: local
   connection: local
-  vars: 
+  vars:  # Transforming lists into dictionaries or map
    listtags:
       - key: Application
         value: payment
@@ -16,3 +16,7 @@
 
 # "msg": " List tags are : {'Application': 'payment', 'Environment': 'dev'} "
 # map: {}
+
+
+# FOR SYNATX 
+#  https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_filters.html
