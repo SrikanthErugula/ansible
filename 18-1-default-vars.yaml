@@ -4,9 +4,9 @@
   tasks: 
   - name: default vars
     ansible.builtin.debug: # this the module for excute
-       msg: " hello {{ name }}" # see in google doc error tab
-      #msg: " hello {{ name| default('Srikanth') }}" 
-       msg: " hello {{ name | mandatory }}"
+       #msg: " hello {{ name }}" # see in google doc error tab
+       msg: " hello {{ name| default('Srikanth') }}" 
+       #msg: " hello {{ name | mandatory }}"
 
 # FOR SYNATX 
 #  https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_filters.html

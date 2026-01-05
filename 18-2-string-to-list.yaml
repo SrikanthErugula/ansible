@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars: # Transforming strings into lists 
-    fruits: apple,banana,orange,mango,pineapple,guava,custardapple # these are all strings
+    fruits: "apple,banana,orange,mango,pineapple,guava,custardapple" # these are all strings
   tasks:
   - name: convert string to list 
     ansible.builtin.debug:
