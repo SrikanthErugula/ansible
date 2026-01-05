@@ -12,8 +12,8 @@
     ansible.builtin.debug:
       msg: "{{ user_output }}"
 # the above varku run cheste o/p vastundhi with fail tho so bcz o/p chusi below vunna code ni ready cheyali
-  # - name: create user
-  #   ansible.builtin.command: useradd roboshop
-  #   when: user_output.rc != 0 # so ikkada not equal to zero ithe user anedi create avvali..... second time run cheste skkiping ani avastundhi
+  - name: create user
+    ansible.builtin.command: useradd roboshop
+    when: user_output.rc != 0 # so ikkada not equal to zero ithe user anedi create avvali..... second time run cheste skkiping ani avastundhi
 
     # so o/p lo rc value 1 vunte no ani ledhu ante creta chei ani cheptunam 
