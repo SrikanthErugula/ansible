@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars: # IP address filters
-    ipaddress: "192.150.0.1"
+    ipaddress: "253.23737.0.1"
   tasks:
   - name: check IP is valid or not
     ansible.builtin.debug: 
