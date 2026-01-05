@@ -4,7 +4,7 @@
   vars_prompt: # this is syntax
   - name: username
     prompt: What is your username?
-    private: true # false ani vunte enter chestunte name visible avuthundhi..... True vunte after excute it will be visible...
+    private: false # false ani vunte enter chestunte name visible avuthundhi..... True vunte after excute it will be visible...
   # - name: password # so here will get error  see in notes
   #   prompt: what is your password
   #   private: false # so here false ani vunte enter chesetappudu visible avuthundhi, adhe true ani vunte wont visible
