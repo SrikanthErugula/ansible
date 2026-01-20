@@ -6,7 +6,7 @@
     ansible.builtin.debug: # this the module for excute
       msg: "Hello {{ item }}" # item is reserved it means item lo ki one by one name anedhi vachhi print avuthundhi.
     loop:
-    - Ramesh
+    - Srikanth
     - Suresh
     - Raheem
     - John
