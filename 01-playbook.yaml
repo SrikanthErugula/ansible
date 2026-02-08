@@ -7,10 +7,6 @@
   tasks: # so here antha same place lo one by one vundali
   - name: ping
     ansible.builtin.ping: # see in notes
-
-  - name: "Printing first CMD"
-    ansible.builtin.debug:
-     msg: "Hi, this my first cmd"
 ###################################################
 
 # {so here before : we callled keys.... and after : we called as values... so manam key anevi change 
