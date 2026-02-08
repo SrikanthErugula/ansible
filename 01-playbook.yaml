@@ -6,8 +6,8 @@
   # List of tasks/collections/modules
   tasks: # so here antha same place lo one by one vundali
   - name: ping
-    ansible.builtin.ping:  # see in notes
-
+    ansible.builtin.ping: # see in notes
+      msg: "Hi this my first CMD"
 ###################################################
 
 # {so here before : we callled keys.... and after : we called as values... so manam key anevi change 
