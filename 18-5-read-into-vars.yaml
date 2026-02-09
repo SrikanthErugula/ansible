@@ -14,7 +14,7 @@
       # save json to file
   - name: save json to file
     ansible.builtin.copy:
-      dest: ./student-data1.json # ee name tho file create ayyi data anedhi save avuthundhi
+      dest: ./student-data1.json # idhe folder aa name tho file create ayyi data anedhi save avuthundhi
       content: "{{ student_yaml | to_nice_json  }}" # For human readable output, you can use: to_nice_json
 
       # student_yaml so ee file lo vunde content dest ni file lo veelu ani cheptunam 
