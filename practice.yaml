@@ -75,9 +75,11 @@
   connection: local
   vars:
     lists:
-    - srikd
-    - sjdk
-    - sdl
+    - key: applivat
+      value: kkss
+    - key: lskldk
+      value: jdkjak
+
   tasks:
   - name: list to map
     ansible.builtin.debug:
