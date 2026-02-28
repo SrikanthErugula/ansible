@@ -81,7 +81,7 @@
   tasks:
   - name: list to map
     ansible.builtin.debug:
-      msg: "listtags are: {{lists | item2dict }}"
+      msg: "listtags are: {{lists | items2dict }}"
 
 
 
