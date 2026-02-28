@@ -73,6 +73,7 @@
 - name: list ot map
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: nginx
     ansible.builtin.package:
