@@ -77,7 +77,7 @@
   tasks:
   - name: string ot list
     ansible.builtin.debug:
-      msg: " URL name is {{name | split('/'')}} "
+      msg: " URL name is {{name | split('/')}} "
 
 
 
