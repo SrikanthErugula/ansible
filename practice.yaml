@@ -69,20 +69,30 @@
 
 # 01/03/26 Practice
 
+# - name: variables from prompt
+#   hosts: local
+#   connection: local
+#   vars_prompt: # this is syntax
+#   - name: username
+#     prompt: What is your username?
+#     private: true # false ani vunte enter chestunte name visible avuthundhi..... True vunte after excute it will be visible...
+#   - name: password # so here will get error  see in notes
+#     prompt: what is your password
+#     private: true # so here false ani vunte enter chesetappudu visible avuthundhi, adhe true ani vunte wont visible
+#   tasks: 
+#   - name: print credentials
+#     ansible.builtin.debug:
+#       msg: "Hello, Username is: {{ username }} Password is: {{ password }}"
 
-- name: play
+
+
+- name: pwd
   hosts: local
   connection: local
-  vars:
-    CO: dev
-    time: 30mm
-  tasks:
-  - name: task play
-    vars:
-      CO: ops
-      time: 33m
-    ansible.builtin.debug:
-      msg: "co is:{{CO}}"
+  vars_prompt:
+  - name: username
+    prompt: what is ur name
+    private: false
 
 
 
