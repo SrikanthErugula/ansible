@@ -85,6 +85,10 @@
     ansible.builtin.debug:
       msg: "plsy03"
 
+  - name: play-4
+    ansible.builtin.debug:
+      msg: "kdjak"
+
 
 
 
