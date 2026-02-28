@@ -77,7 +77,7 @@
   tasks:
   - name: print vars
     ansible.builtin.debug:
-      msg: "course is: {{COUR}}"
+      msg: "course is: {{COUR}}, timeis: {{TIME}}"
 
 
 
