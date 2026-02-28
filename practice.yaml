@@ -71,7 +71,7 @@
 - name: ping server
   hosts: ca
   tasks: 
-  - name: 
+  - name: ping
     ansible.bultin.debug: 
 
 
