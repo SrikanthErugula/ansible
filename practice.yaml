@@ -77,7 +77,7 @@
 - name: data types
   hosts: local
   connection: local
-  VARS:
+  vars:
     Course: "DevOps with AWS" # string
     Duration: 120 # number
     is_live: true # boolean
