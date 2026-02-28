@@ -79,7 +79,7 @@
   tasks:
   - name: string ot list
     ansible.builtin.debug:
-      msg: " URL name is {{name | split('/') , sss | split(',') , rrr | split('8')}} "
+      msg: " URL name is : {{ name | split ('/') , sss | split (',') , rrr | split ('8') }} "
 
 
 
