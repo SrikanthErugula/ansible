@@ -83,7 +83,7 @@
       msg: " file si {{ sss_yaml | to_json }}"
 
   - name:
-    ansible.builtin.debug:
+    ansible.builtin.copy:
       dest: ./newssfile.json
       content: "{{ sss_yaml | to_nice_json }}"
 
