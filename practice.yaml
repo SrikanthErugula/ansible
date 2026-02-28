@@ -70,20 +70,6 @@
 # 01/03/26 Practice
 
 
-- name: list ot map
-  hosts: local
-  connection: local
-  become: yes
-  tasks:
-  - name: nginx
-    ansible.builtin.package:
-      name: nginx
-      state: present
-  - name: serice
-    ansible.builtin.service:
-      name: nginx
-      state: started
-      enabled: yes
 
 
 
