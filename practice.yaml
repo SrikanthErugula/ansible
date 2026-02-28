@@ -74,14 +74,13 @@
   hosts: local
   connection: local
   vars:
-  CO: dev
-  time: 30mm
+    CO: dev
+    time: 30mm
   tasks:
   - name: task play
     vars:
       CO: ops
       time: 33m
-      
     ansib;e.builtin.debug:
       msg: "co is:{{CO}}"
 
