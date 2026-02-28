@@ -73,7 +73,11 @@
 - name: list ot map
   hosts: local
   connection: local
- 
+
+  tasks:
+  - name: setfact
+    ansible.builtin.set_fact:
+      sss_yaml: " {{ lookup ('file' ,' student.xml' | from_yaml ) }} "
 
 
 
