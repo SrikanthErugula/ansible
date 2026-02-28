@@ -76,11 +76,13 @@
   - name: palybok-1 and task-1
     ansible.builtin.debug:
       msg: "playbook-1"
+
   - name: play-2 and taks-2
     ansible.builtin.debug:
       msg: "play-2"
+
   - name: play-3
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "plsy03"
 
 
