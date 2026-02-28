@@ -11,10 +11,10 @@
         },
         {
             "type": "perm",
-            "doono": "1-23",
-            "street": "gandhi nagar",
+            "doono": "1-24",
+            "street": "gandhi nagarr",
             "city": "hyd",
-            "pin": 50082
+            "pin": 50085
         }
     ],
     "skills": ["java", "devops", "cloud"]

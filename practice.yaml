@@ -77,15 +77,15 @@
   tasks:
   - name: setfact
     ansible.builtin.set_fact:
-      sss_yaml: " {{ lookup ('file' ,' student.xml' | from_yaml ) }} "
+      sss_yaml: " {{ lookup ('file' ,' student.json' | from_yaml ) }} "
   - name: convert
     ansible.builtin.debug:
-      msg: " file si {{ sss_yaml | to_json }}"
+      msg: " file si {{ sss_yaml | to_yaml }}"
 
   - name:
     ansible.builtin.copy:
       dest: ./newssfile.json
-      content: "{{ sss_yaml | to_nice_json }}"
+      content: "{{ sss_yaml | to_nice_yaml }}"
 
 
 
