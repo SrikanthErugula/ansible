@@ -73,18 +73,7 @@
 - name: list ot map
   hosts: local
   connection: local
-  vars:
-    lists:
-    - key: applivat
-      value: kkss
-    - key: lskldk
-      value: jdkjak
-
-  tasks:
-  - name: list to map
-    ansible.builtin.debug:
-      msg: "listtags are: {{lists | items2dict }}"
-
+ 
 
 
 
