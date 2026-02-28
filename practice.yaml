@@ -70,32 +70,12 @@
 # 01/03/26 Practice
 
 
-- name: PLAY-01
+- name: ping
   hosts: local
   connection: local
   tasks:
-  - name: PLAY-01 and TASK-01
-    ansible.builtin.debug: # so here echo ki edqual to debug.......
-      msg: "Hello from PLAY-01 and TASK-01"
-
-  - name: PLAY-01 and TASK-02
-    ansible.builtin.debug:
-      msg: "Hello from PLAY-01 and TASK-02"
-# the above is one play 
-
-# and the below one is another play
-- name: PLAY-02
-  hosts: local
-  connection: local
-  tasks:
-  - name: PLAY-02 and TASK-01
-    ansible.builtin.debug:
-      msg: "Hello from PLAY-02 and TASK-01"
-
-  - name: PLAY-02 and TASK-02
-    ansible.builtin.debug:
-      msg: "Hello from PLAY-02 and TASK-02"
-
+  - name: ping
+    ansible.builtin.ping: 
 
 
 
