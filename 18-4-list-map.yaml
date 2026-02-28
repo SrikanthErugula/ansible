@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:  # Transforming lists into dictionaries or map
-   listtag:
+   listtags:
       - key: Application
         value: payment
       - key: Environment
@@ -10,7 +10,7 @@
   tasks:
   - name: convert list into map # so here convert to list to map loki 
     ansible.builtin.debug: # this the module for excute
-      msg: " List tags are : {{ listtag | items2dict }} "
+      msg: " List tags are : {{ listtags | items2dict }} "
   
 
 
