@@ -68,16 +68,21 @@
 #       msg: " hello {{ name | mandatory }}" # FAILED! => {"msg": "Mandatory variable 'name'  not defined."}
 
 # 01/03/26 Practice
-- name: vars
+
+
+- name: play
   hosts: local
   connection: local
   vars:
-    COUR: dev
-    TIME: 3montha
+  CO: dev
+  time: 30mm
   tasks:
-  - name: print vars
-    ansible.builtin.debug:
-      msg: "course is: {{COUR}}, timeis: {{TIME}}"
+  - name: task play
+    vars:
+      CO: ops
+      time: 33m
+    ansib;e.builtin.debug:
+      msg: "co is:{{CO}}"
 
 
 
