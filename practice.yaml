@@ -75,7 +75,7 @@
   tasks:
   - name:
     ansible.builtin.debug:
-      mes: "{{item}}"
+      msg: "{{item}}"
     loop:
     - sri
     - kanth
