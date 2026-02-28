@@ -77,7 +77,7 @@
 - name: data types
   hosts: local
   connection: local
-  concepts:
+  VARS:
     Course: "DevOps with AWS" # string
     Duration: 120 # number
     is_live: true # boolean
@@ -89,6 +89,9 @@
     concepts: # dictionary or map so here below not start with - so we called as map or disctinory
       cloud: aws
       cm: ansible
+      Course: "DevOps with AWS" # string
+      Duration: 120 # number
+      is_live: true # boolean
   tasks:
   - name: print course info
     ansible.builtin.debug: # this the module for excute
