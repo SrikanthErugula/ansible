@@ -75,7 +75,7 @@
   connection: local
   tasks:
   - name: checks
-    ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.shell: cat /etc/passwd | grep root
     register: ss_op
 
 
