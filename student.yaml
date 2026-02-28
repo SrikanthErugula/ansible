@@ -20,33 +20,33 @@
   - cloud
 
 - name: "ramesh"
-  dob: "01-01-01"
-  age: 21
+  dob: "01-01-012"
+  age: 212
   addresses:
     # Object
   - doorNo: 4-32
     street: "gandhi nagar"
     city: hyderabd
-    pin: 534565
-    type: current
+    pin: 534565345
+    type: currenttt
   
   - doorNo: 4-32
     street: "gandhi nagar"
     city: hyderabd
-    pin: 534565
-    type: perm
+    pin: 53456545
+    type: permmm
   skills:
   - java
-  - devops
+  - devopsss
   - cloud
 
 - Education:
-  ssc: 
-  inter:
-  degree:
+  ssc: school
+  inter: college
+  degree: btech
 
 - Percentage:
-  sss:
-  inter:
-  degree:
+  sss: "80"
+  inter: "90"
+  degree: "80"
   

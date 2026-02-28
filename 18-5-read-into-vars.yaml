@@ -4,7 +4,6 @@
   tasks: # Formatting data: YAML and JSON
   - name: read yaml and take it into variable
     ansible.builtin.set_fact: # # this the module for excute ... vars ni define cheyatum dynamic ga 
-    # this the module for excute 
       student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}" # see in notes
 # convert yaml into json
   - name: convert yaml into json
