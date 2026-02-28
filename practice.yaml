@@ -73,21 +73,12 @@
 - name: list ot map
   hosts: local
   connection: local
-
+  vars:
+    ip: "133.3.309.3093"
   tasks:
-  - name: setfact
-    ansible.builtin.set_fact:
-      sss_yaml: " {{ lookup ('file' ,' student.json' | from_yaml ) }} "
-  - name: convert
+  - name: ipcheck
     ansible.builtin.debug:
-      msg: " file si {{ sss_yaml | to_yaml }}"
-
-  - name:
-    ansible.builtin.copy:
-      dest: ./newssfile.json
-      content: "{{ sss_yaml | to_nice_yaml }}"
-
-
+      msg: "ip is : {{ ip | ansible.utils.ipv4 }}"
 
 
 
