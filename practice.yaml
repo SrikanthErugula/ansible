@@ -68,8 +68,8 @@
 #       msg: " hello {{ name | mandatory }}" # FAILED! => {"msg": "Mandatory variable 'name'  not defined."}
 
 # 01/03/26 Practice
-- name: ping server
-  hosts: ca
+- name: "ping server"
+  hosts: cart
   tasks: 
   - name: ping
     ansible.bultin.ping: 
