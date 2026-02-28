@@ -75,7 +75,7 @@
   tasks:
   - name: default
     ansible.builtin.debug:
-      msg: " {{name | mandatory}} "
+      msg: "Hello {{name | default('Srikanth') }}"
 
 
 
