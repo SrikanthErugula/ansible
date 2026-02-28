@@ -75,10 +75,11 @@
   vars:
    name: "https://docs.ansible.com/projects/ansible/latest/search.html?q=default+function&check_keywords=yes&area=default"
    sss: "kdlad,aldkla,adkladk,alkdla,akala,dalfkals,dalfklasfa,ldkasld;a,adfla,aasldkasl,dakdas,dakd,.as"
+   rrr: "ksjdkfjsd8skdjk8sfksjfsd8skjfksdjkds8sjfksdjfs8sdjfjksdjf8sdjfksdjfisfksdf8sfjksdj8sdfjdskf8seksdfisdksdjf8skdfj8jksjd"
   tasks:
   - name: string ot list
     ansible.builtin.debug:
-      msg: " URL name is {{name | split('/') , sss | split(',')}} "
+      msg: " URL name is {{name | split('/') , sss | split(',') , rrr | split('8')}} "
 
 
 
