@@ -73,12 +73,11 @@
 - name: list ot map
   hosts: local
   connection: local
-  vars:
-    ip: "172.31.9.201"
   tasks:
-  - name: ipcheck
-    ansible.builtin.debug:
-      msg: "ip is : {{ ip | ansible.utils.ipv4 }}"
+  - name: checks
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: ss_op
+
 
 
 
