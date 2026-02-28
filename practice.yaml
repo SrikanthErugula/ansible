@@ -74,10 +74,11 @@
   connection: local
   vars:
    name: "https://docs.ansible.com/projects/ansible/latest/search.html?q=default+function&check_keywords=yes&area=default"
+   sss: "kdlad,aldkla,adkladk,alkdla,akala,dalfkals,dalfklasfa,ldkasld;a,adfla,aasldkasl,dakdas,dakd,.as"
   tasks:
   - name: string ot list
     ansible.builtin.debug:
-      msg: " URL name is {{name | split('/')}} "
+      msg: " URL name is {{name | split('/') , sss | split(',')}} "
 
 
 
