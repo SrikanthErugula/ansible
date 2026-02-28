@@ -69,18 +69,13 @@
 
 # 01/03/26 Practice
 
-- name: loops
+- name: default vars
   hosts: local
   connection: local
   tasks:
-  - name:
+  - name: default
     ansible.builtin.debug:
-      msg: "{{item}}"
-    loop:
-    - sri
-    - kanth
-    - reddy
-
+      msg: " {{name | mandatory}} "
 
 
 
