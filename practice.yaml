@@ -74,13 +74,11 @@
   hosts: local
   connection: local
   tasks:
-  - name: checks
-    ansible.builtin.shell: cat /etc/passwd | grep root
-    register: ss_op
-  - name: check op
-    ansible.builtin.debug:
-      msg: " op is: {{ss_op}}"
-
+  - name: nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+      msg: " Software is: {{ name }}"
 
 
 
