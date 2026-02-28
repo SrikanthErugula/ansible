@@ -23,4 +23,12 @@
 #   tasks:
 #   - name: string ot list
 #     ansible.builtin.debug:
-#       msg: " URL is : {{ nnn | split ('/') , sss | split (',') , rrr | split ('8') }} "
+#       msg: " URL is : {{ nnn | split ('/') , sss | split (',') , rrr | split ('8') }} "   
+
+
+# so ekkuva use chestunam kabbbti we get o/p like these 
+
+# TASK [string ot list] ****************************************************************************************************************************************
+# ok: [localhost] => {
+#     "msg": " URL is : (['https:', '', 'docs.ansible.com', 'projects', 'ansible', 'latest', 'search.html?q=default+function& 'jksjd']) "    within()
+# }
