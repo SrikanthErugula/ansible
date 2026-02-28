@@ -89,7 +89,7 @@
 - name: pwd
   hosts: local
   connection: local
-  vars_prompt:
+  vars-prompt:
   - name: username
     prompt: what is ur name
     private: false
