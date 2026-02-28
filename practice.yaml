@@ -79,7 +79,12 @@
     ansible.builtin.package:
       name: nginx
       state: present
-      
+  - name: serice
+    ansible.builtin.debug:
+      name: nginx
+      state: started
+      enabled: yes
+
 
 
 
