@@ -73,12 +73,12 @@
   hosts: local
   connection: local
   vars:
-    name: OHM
+   name: "https://docs.ansible.com/projects/ansible/latest/search.html?q=default+function&check_keywords=yes&area=default"
   tasks:
-  - name: default
+  - name: string ot list
     ansible.builtin.debug:
-      msg: "Hello {{name | default('Srikanth') }}"
-
+      
+      msg: " URL name is {{name | split('/'')}} "
 
 
 
