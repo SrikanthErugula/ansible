@@ -69,33 +69,19 @@
 
 # 01/03/26 Practice
 
-
-
-
-
-
-- name: data types
+- name: loops
   hosts: local
   connection: local
-  vars:
-    # Course: "DevOps with AWS" # string
-    # Duration: 120 # number
-    # is_live: true # boolean
-    # list
-    tools: # ["linux", "shell", "ansible"] ila ayina pettachu or else like as below 
-    - "linux"
-    - shell
-    - ansible # so ikkada (-) iphen tho start ithe adhi list 
-    concepts: # dictionary or map so here below not start with - so we called as map or disctinory
-      cloud: aws
-      cm: ansible
-      Course: "DevOps with AWS" # string
-      Duration: 120 # number
-      is_live: true # boolean
   tasks:
-  - name: print course info
-    ansible.builtin.debug: # this the module for excute
-      msg: "Course name: {{ Course }}, Duration: {{ Duration }}, is it live?: {{ is_live }}, tools are: {{ tools }} concepts are: {{ concepts }}"
+  - name:
+    ansible.builtin.debug:
+      mes: "{{item}}"
+    loop:
+    - sri
+    - kanth
+    - reddy
+
+
 
 
 
