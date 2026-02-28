@@ -58,11 +58,46 @@
 
 
 
-- name: functions
-  hosts: local
-  connection: local
+# - name: functions
+#   hosts: local
+#   connection: local
+#   tasks: 
+#   - name: default vars
+#     ansible.builtin.debug:
+#       msg: " hello {{ name| default('Srikanth') }}" # ERROR: {"msg": "The task includes an option with an undefined variable. The error was: 'name' is undefined. 'name .... so here in ansible  vars ni use chestu ekkada define cheyakapothe..... we can use default word in msg lo like msg: " hello {{ name | default('Srikanth') }}" .... mandatory ani pedithe we can definetely call vars
+#       msg: " hello {{ name | mandatory }}" # FAILED! => {"msg": "Mandatory variable 'name'  not defined."}
+
+# 01/03/26 Practice
+- name: Ping the server
+  hosts: cart
   tasks: 
-  - name: default vars
-    ansible.builtin.debug:
-      msg: " hello {{ name| default('Srikanth') }}" # ERROR: {"msg": "The task includes an option with an undefined variable. The error was: 'name' is undefined. 'name .... so here in ansible  vars ni use chestu ekkada define cheyakapothe..... we can use default word in msg lo like msg: " hello {{ name | default('Srikanth') }}" .... mandatory ani pedithe we can definetely call vars
-      msg: " hello {{ name | mandatory }}" # FAILED! => {"msg": "Mandatory variable 'name'  not defined."}
+  - name: ping
+    ansible.builtin.ping:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
