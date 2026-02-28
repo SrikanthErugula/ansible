@@ -78,9 +78,9 @@
   hosts: local
   connection: local
   vars:
-    Course: "DevOps with AWS" # string
-    Duration: 120 # number
-    is_live: true # boolean
+    # Course: "DevOps with AWS" # string
+    # Duration: 120 # number
+    # is_live: true # boolean
     # list
     tools: # ["linux", "shell", "ansible"] ila ayina pettachu or else like as below 
     - "linux"
