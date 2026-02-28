@@ -72,6 +72,8 @@
 - name: default vars
   hosts: local
   connection: local
+  vars:
+    name: OHM
   tasks:
   - name: default
     ansible.builtin.debug:
