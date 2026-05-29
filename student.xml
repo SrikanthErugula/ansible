@@ -1,7 +1,7 @@
 <!-- List of student objects -->
 <Students>
     <!-- Object 1 -->
-    <Student>
+    <Student-1>
         <Name>Sivakumar Reddy</Name>
         <DOB>01-01-01</DOB>
         <Age>21</Age>
@@ -13,6 +13,7 @@
                 <Street>Gandhi Nagar</Street>
                 <PIN>3456</PI>
             </Address>
+            <!-- List of objects -->
             <Address type="Current">
                 <DoorNo>4-34</DoorNo>
                 <Street>Gandhi Nagar</Street>
@@ -25,9 +26,9 @@
             <Skill>DevOps</Skill>
             <Skill>Cloud<Skill>
         </Skills>
-    </Student>
+    </Student-1>   
 <!-- Object  2 --> 
-    <Student>
+    <Student-2>
         <Name>Ramesh</Name>
         <DOB>01-01-01</DOB>
         <Age>21</Age>
@@ -52,4 +53,4 @@
             <Skill>Cloud<Skill>
         </Skills>
     </Student>
-</Students>
+</Students-2>
