@@ -1,7 +1,7 @@
 - name: functions
   hosts: local
   connection: local
-  tasks: # Formatting data: YAML and JSON
+  tasks: # Reading file and then taking output into a variable
   - name: read yaml and take it into variable
     ansible.builtin.set_fact: # # this the module for excute ... vars ni define cheyatum dynamic ga 
       student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}" # see in notes
