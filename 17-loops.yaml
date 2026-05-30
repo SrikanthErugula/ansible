@@ -10,4 +10,5 @@
     loop:
     - { name: "nginx", state: "absent"} 
     - { name: "mysql", state: "absent"} # uninstall 
-    - { name: "zip", state: "latest"} # install 
+    - { name: "zip", state: "latest"} # install
+    
